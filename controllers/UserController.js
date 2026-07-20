@@ -84,6 +84,9 @@ const getCurrentUser = async (req, res) => {
 }
 
 const update = async (req, res) => {
+
+    console.log("BODY:", req.body)
+    console.log("FILE:", req.file)
     
     const { name, password, bio } = req.body
 
